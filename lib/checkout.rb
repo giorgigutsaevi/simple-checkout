@@ -7,11 +7,11 @@ class Checkout
 
   def scan(item)
 		@total.push(item.price)
-    item.price
+		"£#{item.price}"
   end
 
 	def total
-		@total.sum
+		"£#{@total.sum}"
 	end
 	
 end
